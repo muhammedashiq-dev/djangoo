@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>movie</title>
+</head>
+<body>
+  <form action="" method="POST">
+    {% csrf_token %}
+    <label>Movie name:</label><br>
+    {{form.movie_name}}
+    {{form.movie_name.errors}}
+    <br><br>
+    <label>Release Year:</label><br>
+    {{form.release_year}}
+    {{form.release_year.error}}
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
