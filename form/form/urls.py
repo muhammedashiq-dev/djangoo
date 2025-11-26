@@ -21,5 +21,6 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('postform.urls')),
-    path('get/',include('forms.urls'))
+    path('get/',include('forms.urls')),
+    path('web/',include('web.urls'))
 ]
